@@ -1,0 +1,19 @@
+201  curl -o wilders.cs https://gist.githubusercontent.com/bhubr/bc3a21a0202109beeb31c4a677e0461b/raw/d8805eb82e8aabffab3b0163596c734f376617d0/wilders.csv~
+
+  202  cat wilders.csv
+
+  203  cat wilders.csv |grep France,2019,PHP
+
+  204  cat wilders.csv |grep France,2019,PHP > php_france_2019.csv
+
+  205  cat wilders.csv |grep Toulouse > toulouse.csv
+
+  206  cat toulouse.csv |grep JavaScript > javascript_toulouse.csv
+
+  207  cat wilders.csv |grep Biarritz > biarritz.csv
+
+  208  cat biarritz.csv |grep JavaScript > javascript_biarritz.csv
+
+  209  cat javascript_toulouse.csv javascript_biarritz.csv | sort -u > javascript_biarritz_toulouse.csv
+
+  210  history | tail -n 10 > history.txt
